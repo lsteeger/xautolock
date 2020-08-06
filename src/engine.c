@@ -210,7 +210,7 @@ evaluateTriggers (Display* d)
 #else /* VMS */
   if (lockerPid)
   {
-#if !defined (UTEKV) && !defined (SYSV) && !defined (SVR4)
+#if !defined (_DEFAULT_SOURCE) && !defined (UTEKV) && !defined (SYSV) && !defined (SVR4)
     union wait  status;      /* childs process status */
 #else /* !UTEKV && !SYSV && !SVR4 */
     int         status = 0;  /* childs process status */
