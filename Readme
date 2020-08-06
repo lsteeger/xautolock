@@ -70,13 +70,17 @@ Xautolock should compile straight out of the box. Here's the recepy:
 
  1. Edit the Imakefile to your likings.
 
- 2. Type:
+ 2. Type (please use the two scripts, because the default may try to
+          remove /usr/bin and /usr/man directories):
 
      xmkmf 
      make
      make install
      make install.man
      make clean 
+or
+     ./make-install.sh
+     ./make-clean.sh
 
  3. Have fun.
 
