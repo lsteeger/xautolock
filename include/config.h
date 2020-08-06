@@ -22,6 +22,12 @@
 #ifndef __config_h
 #define __config_h
 
+#if defined(_BSD_SOURCE)
+# ifndef _DEFAULT_SOURCE
+#  define _DEFAULT_SOURCE
+# endif
+#endif
+
 #if defined(hpux) || defined (__hpux)
 #ifndef _HPUX_SOURCE
 #define _HPUX_SOURCE
